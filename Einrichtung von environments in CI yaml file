@@ -1,0 +1,9 @@
+Guide zur Einrichtung von environment variables:
+
+Go to settings > environment > new environment > define a name for your environment > press configure environment > add your environment variables
+
+Next step is to write it on the CI yaml file :
+
+add "env : (the name defined for your environment)"
+
+add " {{ vars.(your value) }}
