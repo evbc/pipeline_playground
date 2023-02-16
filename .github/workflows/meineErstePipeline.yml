@@ -21,6 +21,9 @@ jobs:
     - name: funktionstest
       run: echo Hello Funktionstest
       
+    - name: WELCOME_MESSAGE
+      run: echo ${{ vars.WELCOME_MESSAGE}}
+      
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -33,7 +36,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo $HELLO_MESSAGE!
+        run: echo Hello World!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
