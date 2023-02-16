@@ -1,0 +1,7 @@
+For having a secure branch:
+
+Go to settings > Branches > Branch Protection rule
+
+in the category "protect matching branches" 
+
+> the first 3 and the last one should be clicked on
