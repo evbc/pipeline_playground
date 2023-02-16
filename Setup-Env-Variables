@@ -1,0 +1,8 @@
+# Instructions
+1. Find "Environments" in the repositories "Settings" tab
+2. Create both environments (and include branch rules to further slim down the branches which can make use of the environments)
+3. Add the variable and it's value inside the environment
+4. In your workflow reference the environment you want to use by adding the following line in the script (for the job you need it for): "environment: [ENV NAME]"
+5. Use the needed variables with mustache spelling like this: "{{ vars.[YOUR_VAR_NAME_HERE] }}"
+6. Repeate step 3 but with your secrets instead
+7. Mustache spelling for secrets: {{ secrets.[YOUR_SECRET_NAME_HERE }}
